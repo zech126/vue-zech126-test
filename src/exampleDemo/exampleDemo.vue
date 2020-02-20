@@ -1,18 +1,7 @@
 <template>
   <div class="exampleDemo">
     <div class="item">
-      <aggregate />
-    </div>
-    <div class="item">
       <elButtonIconMe icon="el-icon-edit" @click="btClick">999999</elButtonIconMe>
-    </div>
-    <div class="item">
-      <!-- <elPaginationMe
-        :currentPage="page.page"
-        :pageSize="page.pageSize"
-        :total="page.total"
-        @onChange="handlePageChange"
-      /> -->
     </div>
     <div class="item">
       <el-form ref="form" :model="form" label-width="80px">
@@ -23,14 +12,12 @@
 </template>
 
 <script>
-import { test, elButtonIconMe, elPaginationMe, elInputMe } from '@zech126/aggregate'
+import { elButtonIconMe, elInputMe } from '@zech126/aggregate'
 
 export default {
   name: 'exampleDemo',
   components: {
-    aggregate: test,
     elButtonIconMe,
-    elPaginationMe,
     elInputMe
   },
   data () {
